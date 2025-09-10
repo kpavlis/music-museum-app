@@ -75,7 +75,7 @@ Follow these steps to install and run the application:
 
 **_Demo Video:_**
 
-> (Coming...)
+> https://github.com/user-attachments/assets/8bbe079b-ae13-4ad9-8077-d5da755e2fb6
 
 # 🔒 Code Ownership & Usage Terms
 
