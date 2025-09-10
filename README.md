@@ -1,6 +1,6 @@
 # 🎶 Music Museum
 
-**A virtual journey through the sounds, stories, and spaces of Greek music culture.**
+**A virtual journey through the sounds, stories, and spaces of music culture.**
 
 > ℹ️ This project is not open source and does not grant any usage rights.
 > For usage terms and legal information, see [Code Ownership & Usage Terms](#-code-ownership--usage-terms).
@@ -19,19 +19,18 @@ Music Museum is a modern Windows desktop application built with WinAppSDK and C#
 - Cafeteria ordering system with shopping cart and payment interface  
 - Room Management Panel for staff to control room status and temperature
 
-## 🛠 Technologies Used  
+## 🛠️ Technologies Used  
 
 - WindowsAppSDK / WinUI3
 - XAML for the UI
 - C# for the Businnes Logic
 
-
 ## 🎯 Purpose 
 
-The Music Museum application was created to simulate a virtual museum environment dedicated to Greek music. It aims to educate, entertain, and engage users by offering a variety of interactive rooms and features that reflect the richness of Greece’s musical heritage. Whether you're a casual visitor exploring artist profiles or a staff member managing the museum’s digital infrastructure, the application provides a seamless and culturally immersive experience. By combining modern UI design with multimedia integration, Music Museum bridges tradition and technology in a way that is both accessible and inspiring. **It is developed solely for academic and research purposes.**
+Music Museum was created to offer users a rich and engaging experience of music culture through a virtual environment. It brings together interactive exhibitions, music playback, screenings, and ambient spaces that simulate the atmosphere of a real museum. The application invites users to explore, enjoy, and connect with the essence of musical identity in a modern and immersive way. **It is developed solely for academic and research purposes.**
 
 
-## 📋 Prerequisites  
+## 🧰 Prerequisites  
 
 - **Windows 10 version 1809 or later** (Windows 11 recommended)
 - **Visual Studio 2022** (version 17.1 or newer)
@@ -42,7 +41,7 @@ The Music Museum application was created to simulate a virtual museum environmen
 - **Developer Mode** enabled in Windows
 
 
-## 🚀 Installation  
+## 📦 Installation  
 
 Follow these steps to install and run the application:
 
@@ -58,7 +57,7 @@ Follow these steps to install and run the application:
      In your `.csproj` file, ensure the framework is set correctly:
    
      ```xml
-     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+     <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
    
 6. **Run the application** as _Unpackaged app_
 
