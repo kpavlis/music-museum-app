@@ -29,6 +29,7 @@ namespace Ergasia_Allilepidrasi
         {
             this.RequestedTheme = ApplicationTheme.Light;
             this.InitializeComponent();
+
         }
 
         
