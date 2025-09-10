@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ergasia_Allilepidrasi (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Ergasia_Allilepidrasi (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

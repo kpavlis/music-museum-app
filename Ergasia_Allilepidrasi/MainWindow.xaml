@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Ergasia_Allilepidrasi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ergasia_Allilepidrasi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid KeyDown="Grid_KeyDown" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel  Grid.Row="0" Orientation="Horizontal" Visibility="Visible" Spacing="15" Height="30"  x:Name="TitleBar" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Margin="0, 0, 0, 2">
+            <ImageIcon Height="18" Width="18" Margin="15, 0, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Assets/icon.png"/>
+            <TextBlock VerticalAlignment="Center" Text="Music Museum" />
+            <TextBlock Visibility="Collapsed" VerticalAlignment="Center" Text="PREVIEW" Foreground="Gray" />
+
+        </StackPanel>
+
+        <SplitView x:Name="splitView" x:FieldModifier="Internal" Grid.Row="1" DisplayMode="Inline" OpenPaneLength="290" CompactPaneLength="56" IsPaneOpen="False" PaneBackground="Transparent">
+
+            <SplitView.Pane>
+                <Border BorderBrush="{ThemeResource SystemControlBackgroundBaseLowRevealBorderBrush}" BorderThickness="1" Margin="10" CornerRadius="12" Background="{ThemeResource SystemControlAcrylicElementMediumHighBrush}">
+                    <ScrollViewer ZoomMode="Disabled"
+            IsVerticalScrollChainingEnabled="True"
+            HorizontalScrollMode="Disabled"
+            VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Auto">
+                        <Grid HorizontalAlignment="Center" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20"  Margin="0, 15, 0, 15">
+                                <FontIcon Glyph="&#xE946;" FontSize="60" Margin="0, 8, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="Online" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="Help" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να μάθω τη βιογραφία ενός καλλιτέχνη; " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock Text="Α. Πατήστε την καρτέλα «Έκθεση Καλλιτεχνών» από το μενού που βρίσκεται στο πάνω μέρος του παραθύρου. 
+
+&#10;&#10;Β. Στην αίθουσα έκθεσης καλλιτεχνών πατήστε ένα κάδρο. Κάθε κάδρο να αντιστοιχεί στη βιογραφία του εικονιζόμενου καλλιτέχνη καθώς και ένα τραγούδι του σε μορφή link." TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να κρατήσω μία θέση για μία συναυλία; " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock Text="Α. Πατήστε την καρτέλα «Κράτηση Εισιτηρίου» από το μενού που βρίσκεται στο πάνω μέρος της οθόνης.
+&#10;&#10;Β. Στο δεξί μέρος του παραθύρου δείτε τον αριθμό θέσης που θέλετε να κάνετε κράτηση.
+&#10;&#10;Γ. Στο αριστερό μέρος του παραθύρου:
+	&#10;i. Επιλέξτε μία από τις διαθέσιμες συναυλίες.
+&#10;ii. Πληκτρολογήστε τον αριθμό θέσης που επιθυμείτε.
+&#10;iii. Πατήστε το κουμπί «Κράτηση».
+&#10;iv. Στο παράθυρο που θα εμφανιστεί συμπληρώστε τα απαραίτητα στοιχεία πληρωμής.
+&#10;v. Πατήστε το κουμπί «Πληρωμή» του παραθύρου. " TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να παρακολουθήσω βίντεο/να ακούσω μουσική;  " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock Text="Α. Πατήστε την καρτέλα «Αίθουσα Προβολών» από το μενού που βρίσκεται στο πάνω μέρος της οθόνης.
+&#10;&#10;Β. Πατήστε μία από τις τρεις επιλογές που υπάρχουν στο κάτω μέρος του παραθύρου.
+&#10;i. Αν θέλετε να δείτε ένα βίντεο που επιθυμείτε, πατήστε το κουμπί «Youtube».
+&#10;ii. Αν θέλετε να δείτε μία συνέντευξη, πατήστε το κουμπί «Συνέντευξη1» ή το κουμπί «Συνένευξη2»." TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να κάνω μία παραγγελία στην καφετέρια; " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock xml:space="preserve" Text="Α. Πατήστε την καρτέλα «Καφετέρια» από το μενού που βρίσκεται στο πάνω μέρος της οθόνης.
+                                                   &#10;&#10;Β. Στο αριστερό μέρος του παραθύρου πατήστε το κουμπί «Ναι» στην ερώτηση που σας κάνει ο υπάλληλος.
+&#10;&#10;Γ. Στο δεξιό μέρος του παραθύρου επιλέξτε το φαγητό/ποτό της αρεσκείας σας.
+&#10;&#10;Δ. Στο κάτω μέρος της οθόνης κάτω από το εικονίδιο του καροτσιού πατήστε το κουμπί «See the cart or/and Pay».
+&#10;&#10;1. Αν θέλετε να προχωρήσετε στην πληρωμή :
+		&#10;i. Στο δεξί μέρος του παραθύρου κάτω από το ποσό πληρωμής πατήστε το κουμπί «Submit order &amp; Pay» που βρίσκεται.
+		&#10;ii. Στο παράθυρο που θα εμφανιστεί συμπληρώστε τα απαραίτητα στοιχεία πληρωμής.
+		&#10;iii. Πατήστε το κουμπί «Πληρωμή» του παραθύρου.
+	&#10;&#10;2. Αν θέλετε να συνεχίσετε την αγορά σας :
+		i.Στο αριστερό μέρος του παραθύρου κάτω από το εικονίδιο του καροτσιού πατήστε το κουμπί «Continue bying».
+	&#10;&#10;3. Αν θέλετε να ακυρώσετε ή να κάνετε νέα παραγγελία:
+		&#10;i.Στο δεξιό μέρος του παραθύρου πατήστε το κουμπί «Νέα παραγγελία»." TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να ακούσω ένα μουσικό κομμάτι από το DJ; " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock Text="Α. Πατήστε την καρτέλα «DJ» από το μενού που βρίσκεται στο πάνω μέρος της οθόνης.
+	&#10;&#10;Β. Στο δεξί μέρος του παραθύρου επιλέξτε από το Playlist το μουσικό κομμάτι που επιθυμείτε.
+	&#10;&#10;Γ. Πατήστε το εικονίδιο αναπαραγωγής του μουσικού κομματιού." TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να βαθμολογήσω στο καραόκε; " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock Text="Α. Πατήστε την καρτέλα «DJ» από το μενού που βρίσκεται στο πάνω μέρος της οθόνης.
+&#10;&#10;Β. Στο κάτω δεξιά μέρος του παραθύρου επιλέξτε τη βαθμολογία που επιθυμείτε πατώντας ένα από τα αστεράκια. Κάθε ένα αστεράκι αντιπροσωπεύει ένα βαθμό κατά αύξουσα σειρά από τα αριστερά προς τα δεξιά.
+&#10;&#10;Γ. Πατήστε το κουμπί «Βαθμολόγηση»." TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                                <Expander IsExpanded="False" ExpandDirection="Down" VerticalAlignment="Center" Width="250">
+                                    <Expander.Header>
+                                        <TextBlock Margin="0, 5, 0, 6" Text="Πώς μπορώ να αυξήσω/μειώσω τη θερμοκρασία μίας αίθουσας; " TextWrapping="WrapWholeWords" TextAlignment="Left" FontWeight="SemiBold"/>
+                                    </Expander.Header>
+
+                                    <Expander.Content>
+                                        <TextBlock Text="Α. Πατήστε την καρτέλα «DJ» από το μενού που βρίσκεται στο πάνω μέρος της οθόνης.
+	&#10;&#10;Β. Εντοπίστε την οθόνη που δείχνει την αίθουσα που δείχνει το χώρο που επιθυμείτε να αυξήσετε/μειώσετε τη θερμοκρασία.
+	&#10;&#10;Γ. Κάτω από την οθόνη που έχετε εντοπίσει, αυξήστε/μειώστε τη θερμοκρασία μίας αίθουσας πατώντας το κόκκινο/γαλάζιο κουμπί +/-." TextWrapping="WrapWholeWords" TextAlignment="Justify" />
+                                    </Expander.Content>
+                                </Expander>
+
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                </Border>
+            </SplitView.Pane>
+
+
+
+            <Frame x:Name="contentFrame" >
+                <ScrollViewer ZoomMode="Disabled" IsVerticalScrollChainingEnabled="True" HorizontalScrollMode="Enabled" VerticalScrollMode="Enabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <StackPanel VerticalAlignment="Center" Margin="0, 20, 0, 20">
+                        <Image Source="Assets/icon.png" HorizontalAlignment="Center" Height="100" Width="100" Margin="0, 10, 0, 10"/>
+                        <TextBlock Text="Music Museum" HorizontalAlignment="Center" FontSize="40" FontWeight="SemiBold" />
+                        <TextBlock Text="Επίλεξε Ρόλο" HorizontalAlignment="Center" FontSize="25" Margin="0, 45, 0, 0"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0, 0, 50, 0">
+                                <Image Source="Assets/customer.png" HorizontalAlignment="Center" Height="240" Width="120"/>
+                                <Button Style="{StaticResource AccentButtonStyle}" Content="Πελάτης" Click="Button_Click"  Margin="0, 10, 0, 0 " HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <Image Source="Assets/line.png" Width="50" Height="220" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="50, 0, 0, 0">
+                                <Image Source="Assets/staff.png" HorizontalAlignment="Center" Height="240" Width="120"/>
+                                <Button Style="{StaticResource AccentButtonStyle}" Content="Προσωπικό" Click="Button_Click_1" Margin="0, 10, 0, 0" HorizontalAlignment="Center" />
+                            </StackPanel>
+                        </StackPanel>
+                        <Button Content="Change Theme" Visibility="Collapsed" Click="Button_Click_2" Margin="0, 20, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </ScrollViewer>
+
+            </Frame>
+        </SplitView>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Ergasia_Allilepidrasi.Page_Customer_Special_6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ergasia_Allilepidrasi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <ScrollViewer ZoomMode="Disabled" IsVerticalScrollChainingEnabled="True"  VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Auto" Height="250">
+        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="250" >
+            <!-- Content body -->
+            <Image Source="Assets/Artists/p6.jpeg" Height="150" Width="150"/>
+            <TextBlock Text="Ένας καλλιτέχνης με πάθος για την καλή δουλειά που έχει δημιουργήσει μοναδικές μουσικές αναμνήσεις." TextWrapping="Wrap" Margin="10" FontSize="14" TextAlignment="Center" />
+            <TextBlock Text="Χαρακτηριστικό τραγούδι της,  «Ρίξε με»" TextWrapping="Wrap" Margin="10" FontSize="14" TextAlignment="Center" FontWeight="SemiBold"/>
+            <HyperlinkButton Content="Άκουσε το «Ρίξε με»" NavigateUri="https://www.youtube.com/watch?v=3Cutg8vQyi4&amp;ab_channel=PanikRecordsTube" HorizontalAlignment="Center" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

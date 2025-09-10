@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Ergasia_Allilepidrasi.PAGE_GENERAL_Customer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ergasia_Allilepidrasi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <NavigationView x:Name="nvSample" PaneDisplayMode="Top" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" SelectionChanged="nvSample_SelectionChanged" AllowDrop="False" >
+        <NavigationView.MenuItems>
+
+            <NavigationViewItem Icon="Play" Content="Μουσική" SelectsOnInvoked="False">
+                <NavigationViewItem.MenuItems >
+                    <NavigationViewItem Icon="Play"  Content="DJ" Tag="Page5" />
+                    <NavigationViewItem Icon="MusicInfo"  Content="Καραόκε" Tag="Page6" />
+                </NavigationViewItem.MenuItems>
+            </NavigationViewItem>
+
+            <NavigationViewItem Icon="Pictures" Content="Έκθεση Καλλιτεχνών" Tag="Page1" />
+            <NavigationViewItem Icon="Shop" Content="Αίθουσα Συναυλιών" Tag="Page2" />
+            <NavigationViewItem Content="Αίθουσα Προβολών" Tag="Page3">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xF131;"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Καφετέρια" Tag="Page4">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE7BF;"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Icon="Repair" Content="Πίνακας Διαχείρισης" Tag="Page7" />
+
+
+
+
+        </NavigationView.MenuItems>
+
+        <NavigationView.FooterMenuItems>
+            <NavigationViewItem Tag="Settings">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE897;"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+        </NavigationView.FooterMenuItems>
+
+
+        <Frame x:Name="contentFrame">
+
+            <ScrollViewer ZoomMode="Disabled" IsVerticalScrollChainingEnabled="True" HorizontalScrollMode="Enabled" VerticalScrollMode="Enabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <StackPanel VerticalAlignment="Center">
+                    <Image Source="Assets/Customer_Intro.png" Height="280" Width="290" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Καλωσορίσατε !" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 40, 0,0"/>
+                    <TextBlock Text="Περιειγηθείτε στους χώρους του ψηφιακού Μουσείου Μουσικής κάνοντας επιλογές από το μενού." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="19" TextWrapping="WrapWholeWords" Width="500" TextAlignment="Center" Margin="0, 15, 0,0"/>
+                </StackPanel>
+            </ScrollViewer>
+
+        </Frame>
+
+
+    </NavigationView>
+</Page>

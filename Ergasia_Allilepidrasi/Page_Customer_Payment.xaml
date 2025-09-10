@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Ergasia_Allilepidrasi.Page_Customer_Payment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ergasia_Allilepidrasi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <StackPanel Spacing="15">
+        <StackPanel Spacing="5">
+            <TextBlock Text="Αριθμός Κάρτας"/>
+            <TextBox/>
+        </StackPanel>
+        <StackPanel Spacing="5">
+            <TextBlock Text="Όνομα Κατόχου"/>
+            <TextBox/>
+        </StackPanel>
+        <StackPanel Spacing="5">
+            <TextBlock Text="Ημ. Λήξης"/>
+            <DatePicker/>
+        </StackPanel>
+        <StackPanel Spacing="5">
+            <TextBlock Text="Κωδικός CSV"/>
+            <TextBox/>
+        </StackPanel>
+    </StackPanel>
+</Page>

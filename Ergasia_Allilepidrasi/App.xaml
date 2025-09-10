@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="Ergasia_Allilepidrasi.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ergasia_Allilepidrasi">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <SolidColorBrush x:Key="WindowCaptionBackground">Transparent</SolidColorBrush>
+            <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled">Transparent</SolidColorBrush>
+
+            <SolidColorBrush x:Key="ToggleSwitchFillOn" Color="#40C940"/>
+            <SolidColorBrush x:Key="ToggleSwitchFillOnPointerOver" Color="#40C940"/>
+            <SolidColorBrush x:Key="ToggleSwitchFillOnPressed" Color="#40C940"/>
+            <SolidColorBrush x:Key="ToggleSwitchFillOnDisabled" Color="#40C940"/>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
