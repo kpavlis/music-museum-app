@@ -37,7 +37,7 @@ Music Museum was created to offer users a rich and engaging experience of music 
 - Installed Workloads:
   - .NET Desktop Development
   - Windows App SDK C# Templates
-- **.NET SDK** (.NET 6)
+- **.NET SDK** (version 6)
 - **Developer Mode** enabled in Windows
 
 
