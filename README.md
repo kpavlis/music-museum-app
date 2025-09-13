@@ -23,7 +23,7 @@ Music Museum is a modern Windows desktop application built with WinAppSDK and C#
 
 - WindowsAppSDK / WinUI3
 - XAML for the UI
-- C# for the Businnes Logic
+- C# for Business Logic
 
 ## 🎯 Purpose 
 
