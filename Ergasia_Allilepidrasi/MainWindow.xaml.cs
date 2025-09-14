@@ -92,7 +92,7 @@ namespace Ergasia_Allilepidrasi
             else
             {
                 double dheight = monitorInfo.NativeResolutionInRawPixels.Height / 1.5;
-                double dwidth = monitorInfo.NativeResolutionInRawPixels.Width / 1.4;
+                double dwidth = monitorInfo.NativeResolutionInRawPixels.Width / 1.7;
 
                 height = (int)dheight;
                 width = (int)dwidth;
