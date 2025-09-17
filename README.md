@@ -9,6 +9,8 @@
 
 Music Museum is a modern Windows desktop application built with WinAppSDK and C#. It offers users an immersive digital experience centered around Greek music culture. Through a rich and interactive interface, users can explore artist exhibitions, enjoy curated music playlists, watch screenings, and even order snacks from a virtual cafeteria—all within a unified application environment.
 
+> 📌 The **`resources`** folder contains supporting material such as screenshots.
+
 ## ✨ Features  
 
 - Role-based login system (Citizen or Staff)  
@@ -64,14 +66,14 @@ Follow these steps to install and run the application:
 ## 📷 Screenshots / Video
 
 **_App Screens:_**  
-> <img width="250" height="160" alt="Erg_Alli_1" src="https://github.com/user-attachments/assets/01804344-e916-4cee-8755-cc9e41bc5bd7" />
-> <img width="250" height="160" alt="Erg_Alli_2" src="https://github.com/user-attachments/assets/4aa03ec1-7e73-491d-b9ed-53e72d7ea3e4" />
-> <img width="250" height="160" alt="Erg_Alli_3" src="https://github.com/user-attachments/assets/686b19e6-6ec2-4f3d-a080-9445baa5f8a5" />
-> <img width="250" height="160" alt="Erg_Alli_4" src="https://github.com/user-attachments/assets/37c3e180-a00d-4340-ac35-f253620e2d95" />
-> <img width="250" height="160" alt="Erg_Alli_5" src="https://github.com/user-attachments/assets/d7abec23-4403-4711-bf55-2edb10c90305" />
-> <img width="250" height="160" alt="Erg_Alli_6" src="https://github.com/user-attachments/assets/16efc115-cfff-4058-b89c-18cd1dec69d6" />
-> <img width="250" height="160" alt="Erg_Alli_7" src="https://github.com/user-attachments/assets/ffad20d9-bdaa-4085-b7d7-4207316585c4" />
-> <img width="250" height="160" alt="Erg_Alli_8" src="https://github.com/user-attachments/assets/fbd39dab-3d3d-422b-9ec3-d3d1e3e300e3" />
+> <img width="250" height="160" alt="Erg_Alli_1" src="resources/screenshots/role_selection_screen.png" />
+> <img width="250" height="160" alt="Erg_Alli_2" src="resources/screenshots/music_player.png" />
+> <img width="250" height="160" alt="Erg_Alli_3" src="resources/screenshots/artist_gallery.png" />
+> <img width="250" height="160" alt="Erg_Alli_4" src="resources/screenshots/screening_room_view.png" />
+> <img width="250" height="160" alt="Erg_Alli_5" src="resources/screenshots/coffee_shop.png" />
+> <img width="250" height="160" alt="Erg_Alli_6" src="resources/screenshots/shop_order.png" />
+> <img width="250" height="160" alt="Erg_Alli_7" src="resources/screenshots/rooms_management_panel.png" />
+> <img width="250" height="160" alt="Erg_Alli_8" src="resources/screenshots/online_help.png" />
 
 **_Demo Video:_**
 
